@@ -1,0 +1,57 @@
+
+.modal{
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    height: 100vh;
+    width: 100vw;
+    background-color: greenyellow;
+    padding-top :150px;
+    overflow: auto;
+    text-align: center;
+}
+
+.content{
+    position: relative;
+    width: 80%;
+    margin: auto;
+    border : 1px solid red;
+    background-color: white;
+    animation-name: animationModal;
+    animation-duration: 0.8s;
+}
+
+.close-modal-icon{
+    float: right;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.header{
+    padding: 2px 16px;
+    background-color: green;
+    color: white;
+}
+
+.body{
+    height: 200px;
+}
+
+.footer{
+    padding: 2px 16px;
+    background-color: green;
+    color: white;
+}
+
+@keyframes animationModal {
+    from{
+        top: -200px;
+        opacity: 0;
+    }
+    to{
+        top: 0;
+        opacity: 1;
+    }
+    
+}
